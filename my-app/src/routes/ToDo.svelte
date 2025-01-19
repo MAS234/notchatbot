@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import List from './list.svelte';
+    import list from './List.svelte';
     import Form from './Form.svelte';
 
     let newTaskTitle = ''; // Título de la nueva tarea
