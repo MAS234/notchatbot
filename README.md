@@ -46,11 +46,18 @@ Crea un archivo .env en la raíz del proyecto y proporciona las credenciales par
 
 pnpm run dev
 
+## Mejoras Futuras
+- Implementación de autenticación.
+- Tests unitarios e integración.
+- Optimización adicional de la UI/UX.
+
 CRUD NOTCHATBOT:
 
 <img width="1451" alt="Captura de pantalla 2025-01-19 a la(s) 9 05 31 a  m" src="https://github.com/user-attachments/assets/f2bed5f0-3c8e-4bae-a9ef-480d61a392dc" />
 
 <img width="1432" alt="Captura de pantalla 2025-01-19 a la(s) 9 07 14 a  m" src="https://github.com/user-attachments/assets/524382a6-5ea5-43bc-a435-fa0eb20bd0eb" />
+
+
 
 
 
