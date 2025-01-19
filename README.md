@@ -11,8 +11,15 @@ Este proyecto es una aplicación full-stack desarrollada. Su propósito es demos
 
 ## Funcionalidades
 
-1. Crear, leer, actualizar y eliminar registros (CRUD).
-2. Validación de formularios y manejo de errores.
-3. Interfaz de usuario responsiva con diseño minimalista.
-4. Conexión segura y eficiente con PostgreSQL utilizando Neon y Drizzle.
-5. Código formateado y estilizado con Prettier y ESLint para mantener consistencia.
+- Crear, leer, actualizar y eliminar registros (CRUD).
+- Validación de formularios y manejo de errores.
+- Interfaz de usuario responsiva con diseño minimalista.
+- Conexión segura y eficiente con PostgreSQL utilizando Neon y Drizzle.
+- Código formateado y estilizado con Prettier y ESLint para mantener consistencia.
+
+## Instalación y Uso
+
+### Requisitos previos
+
+- Node.js v16+
+- pnpm instalado globalmente
