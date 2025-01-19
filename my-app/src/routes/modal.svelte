@@ -1,6 +1,6 @@
 <script lang="ts">
     export let isOpen: boolean; // Estado para controlar si el modal está abierto
-    export let task: { id: number; title: string; content: string }; // La tarea a actualizar
+    export let task: { id: number; title: string; content: string; createdAt: Date } | null; // La tarea a actualizar
     export let onClose: () => void; // Función para cerrar el modal
     export let fetchTasks: () => void;
 
@@ -17,7 +17,7 @@
             return;
         }
 
-        const updatedTask = { id: task.id, title: updatedTitle, content: updatedContent };
+        const updatedTask = { id: task?.id, title: updatedTitle, content: updatedContent };
         console.log(updatedTask, 'esto es updatedTask');
         const response = await fetch('../api/datos', {
             method: 'PUT',
@@ -40,7 +40,7 @@
 </script>
 
 {#if isOpen}
-<div class="modal" on:click={onClose}>
+<div class="modal"  on:click={onClose} >
     <div class="modal-content" on:click|stopPropagation>
         <h2 class="text-lg font-bold mb-4">Actualizar tarea</h2>
         <form on:submit|preventDefault={handleUpdate}>

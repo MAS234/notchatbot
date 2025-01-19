@@ -4,6 +4,7 @@
     export let newTaskTitle: string;
     export let newTaskContent: string;
     export let errors: boolean;
+    export let success: boolean;
 
   </script>
 
@@ -31,7 +32,12 @@
       
         <div class="flex flex-col items-center justify-center rounded-md p-3 bg-black text-white hover:bg-green-600 duration-300 w-32 h-10 cursor-pointer shadow-md">
           <button on:click={createTask}>Agregar</button>
+
         </div>
+
+        {#if success}
+        <p class="text-green-600 mt-2 rounded-md shadow-md text-xs">Tarea agregada correctamente</p>
+      {/if}
       </form>
   </div>
 

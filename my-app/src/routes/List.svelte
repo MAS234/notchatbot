@@ -1,18 +1,18 @@
 <script lang="ts">
-    export let tasks: { id: number; title: string; content: string; createdAt: date  }[] = [];
+    export let tasks: { id: number; title: string; content: string; createdAt: Date  }[] = [] ;
     export let fetchTasks: () => void;
     import Modal from './modal.svelte';
     import { formatDate } from './utils/formatear';
 
     // Estado del modal y la tarea seleccionada
     let isModalOpen = false;
-    let selectedTask: { id: number; title: string; content: string } | null = null;
+    let selectedTask: { id: number; title: string; content: string; createdAt: Date } | null = null;
 
     // Función para abrir el modal
-    const openModal = (task: { id: number; title: string; content: string }) => {
-        selectedTask = task;
-        isModalOpen = true;
-    };
+    const openModal = (task: { id: number; title: string; content: string; createdAt: Date }) => {
+    selectedTask = task;
+    isModalOpen = true;
+};
 
     // Función para cerrar el modal
     const closeModal = () => {

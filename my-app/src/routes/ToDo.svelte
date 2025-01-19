@@ -5,8 +5,9 @@
 
     let newTaskTitle = ''; // Título de la nueva tarea
     let newTaskContent = ''; // Descripción de la nueva tarea
-    let tasks: { title: string; content: string }[] = []; // Lista de tareas obtenidas del backend
+    export let tasks: { id: number; title: string; content: string; createdAt: Date  }[] = []; // Lista de tareas obtenidas del backend
     let errors = false;
+    let success = false;
 
     // Función para crear una nueva tarea
     const createTask = async () => {
@@ -26,8 +27,12 @@
         newTaskTitle = '';
         newTaskContent = '';
         errors = false;
+        success = true;
         const task = await response.json(); // Respuesta con la tarea creada
-        console.log('Nueva tarea creada:', task);
+      
+        setTimeout(() => {
+        success = false; 
+        }, 3000);
 
         fetchTasks();
     };
@@ -56,7 +61,7 @@
             <img src="/logoNotChatBot.png" alt="Logo de NotChatBot" class="w-16 h-auto" />
             <h1 class="text-2xl font-bold text-center ml-3">NotChatBot</h1>
           </div>
-          <Form bind:errors bind:newTaskTitle bind:newTaskContent {createTask} />
+          <Form bind:errors bind:newTaskTitle bind:newTaskContent bind:success {createTask} />
         </div>
       
         <!-- Contenedor derecho: Lista de tareas -->
