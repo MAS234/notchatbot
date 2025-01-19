@@ -45,6 +45,16 @@ export const DELETE = async ({ request }: { request: Request }) => {
     return json({ success: true, eliminado });
 }
 
+export const PUT = async ({ request }: { request: Request }) => {
+    const formData = await request.json();
+    const id = formData.id;
+    const actualizado = await consultas.update(id, formData);
+    return json({ success: true, actualizado });
+}
+
+
+
+
 
 
 

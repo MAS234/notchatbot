@@ -5,7 +5,6 @@
     export let newTaskContent: string;
     export let errors: boolean;
 
-    console.log(errors, "ESTAS SON LOS ERRORES");
   </script>
 
   <div class="flex justify-center items-center">

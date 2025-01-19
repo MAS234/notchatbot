@@ -11,8 +11,6 @@
     // Función para crear una nueva tarea
     const createTask = async () => {
 
-        console.log(newTaskTitle, newTaskContent, "ESTAS SON LAS TAREAS ENTRANTES");
-
         if (newTaskTitle === '' || newTaskContent === '') {
            errors = true; // Activar errores si al menos uno está vacío
            console.log("Error: Uno o ambos campos están vacíos.");
@@ -52,6 +50,9 @@
 <div class="flex  w-full h-screen " > 
 
     <div class="w-full h-screen " > 
+        <div class=" w-full h-auto m-auto flex justify-center items-center">
+            <h1 class="text-center text-2xl font-bold bg-orange-600 text-white w-96 m-5 rounded-md shadow-md">ToDo List NotChatBot</h1>
+        </div>
         <Form bind:errors bind:newTaskTitle bind:newTaskContent {createTask} />
     </div>
     
