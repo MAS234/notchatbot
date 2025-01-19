@@ -51,6 +51,10 @@ pnpm run dev
 - Tests unitarios e integración.
 - Optimización adicional de la UI/UX.
 
+# Link del proyecto
+
+https://notchatbot-w1ps.vercel.app/
+
 CRUD NOTCHATBOT:
 
 <img width="1451" alt="Captura de pantalla 2025-01-19 a la(s) 9 05 31 a  m" src="https://github.com/user-attachments/assets/f2bed5f0-3c8e-4bae-a9ef-480d61a392dc" />
