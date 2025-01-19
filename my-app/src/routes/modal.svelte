@@ -65,12 +65,12 @@
             <div class="flex justify-end">
                 <button
                     type="button"
-                    class="bg-gray-500 text-white px-4 py-2 rounded-md mr-2"
+                    class="bg-red-600 hover:bg-red-800 duration-300 text-white px-4 py-2 rounded-md mr-2"
                     on:click={onClose}
                 >
                     Cancelar
                 </button>
-                <button on:click={handleUpdate} class="bg-orange-600 text-white px-4 py-2 rounded-md">
+                <button on:click={handleUpdate} class="bg-black hover:bg-green-800 duration-300 text-white px-4 py-2 rounded-md">
                     Actualizar
                 </button>
             </div>

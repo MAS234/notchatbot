@@ -82,7 +82,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #eb5a0c; /* Color del thumb (parte que se mueve) */
+  background-color: #2664eb; /* Color del thumb (parte que se mueve) */
   border-radius: 10px; /* Bordes redondeados */
   border: 3px solid #f3f3f3; /* Color del borde del thumb */
 }
@@ -99,7 +99,7 @@ scrollbar {
 }
 
 scrollbar thumb {
-  background-color: #eb5a0c; /* Color del thumb */
+  background-color: #2664eb; /* Color del thumb */
   border-radius: 10px; /* Bordes redondeados */
 }
 

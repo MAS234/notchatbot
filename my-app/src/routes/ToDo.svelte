@@ -49,18 +49,22 @@
 
 <div class="flex  w-full h-screen " > 
 
-    <div class="w-full h-screen " > 
-        <div class=" w-full h-auto m-auto flex justify-center items-center">
-            <h1 class="text-center text-2xl font-bold bg-orange-600 text-white w-96 m-5 rounded-md shadow-md">ToDo List NotChatBot</h1>
+    <div class="w-full h-screen flex flex-col lg:flex-row">
+        <!-- Contenedor izquierdo: Formulario -->
+        <div class="w-full lg:w-1/2 h-auto flex flex-col items-center justify-start p-5">
+          <div class="w-48 h-auto flex justify-center items-center mb-5">
+            <img src="/logoNotChatBot.png" alt="Logo de NotChatBot" class="w-16 h-auto" />
+            <h1 class="text-2xl font-bold text-center ml-3">NotChatBot</h1>
+          </div>
+          <Form bind:errors bind:newTaskTitle bind:newTaskContent {createTask} />
         </div>
-        <Form bind:errors bind:newTaskTitle bind:newTaskContent {createTask} />
-    </div>
-    
-    
-    <div class="w-full h-screen" > 
-    <!-- Mostrar la lista de tareas -->
-    <List {fetchTasks} {tasks} />
-    </div>
+      
+        <!-- Contenedor derecho: Lista de tareas -->
+        <div class="w-full lg:w-1/2 h-auto flex justify-center items-start p-5 bg-black">
+          <List {fetchTasks} {tasks} />
+        </div>
+      </div>
+      
 
 </div>
 
